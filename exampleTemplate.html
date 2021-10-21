@@ -5,7 +5,7 @@
     <title>Example Template - 2 Columns</title>
     <style>
         body {
-            background-color: yellow;
+            background-color: gray;
         }
 
         .container {
@@ -61,9 +61,24 @@
             padding-left: 10px;
             padding-right: 10px;
         }
-
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
         #sidebar {
 
+        }
+        #footer{
+            text-align: center;
+            padding: 20px;
+            font-size: 25px;
+            background-color: blue;
+            color: white;
+        }
+        div#footer a{
+            color: white;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -99,6 +114,11 @@
         </div>
         <div id="sidebar">
             Sidebar <br/>Ads<br/>Ads
+        </div>
+    </div>
+    <div class="row">
+        <div id="footer">
+            Copyright 2021 | Web Design | <a href="mailto:drew.fischer@vtsd.com">akiedes@vtsd.com</a>
         </div>
     </div>
 
