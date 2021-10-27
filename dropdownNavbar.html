@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dropdown Navbar!!!!</title>
+    <style>
+        .navbar{
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .navbar a{
+            float: left;
+            font-size: 17px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <a href="#" class="active">Home</a>
+    <a href="#">Products</a>
+    <a href="#">About</a>
+    <div class="dropdown">
+        <button class="dropButton">Socials
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdownContent">
+            <a href="#">Facebook</a>
+            <a href="#">Twiter</a>
+            <a href="#">Snapchat</a>
+            <a href="#">Whatsapp</a>
+            <a href="#">Signal</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </div>
+    <a href="#">Contact</a>
+
+</div>
+</body>
+</html>
