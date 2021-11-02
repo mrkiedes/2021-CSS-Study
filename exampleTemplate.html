@@ -46,7 +46,7 @@
             text-decoration: none;
         }
 
-        li a:hover:not(.active) {
+        li a:hover:not(.active), dropdown:hover .dropButton {
             background-color: #111;
         }
 
@@ -80,6 +80,44 @@
             color: white;
             text-decoration: none;
         }
+
+        .dropdown{
+            float:left;
+            overflow: hidden;
+        }
+        .dropdown .dropButton{
+            font-size: 17px;
+            border: none;
+            outline: none;
+            color: yellow;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin:0;
+        }
+        .dropdownContent{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdownContent a{
+            float:none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown:hover .dropdownContent{
+            display:block;
+        }
+        .dropdownContent a:hover{
+            background-color: lightgrey;
+        }
+
     </style>
 </head>
 <body>
@@ -94,7 +132,23 @@
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">Products</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Socials</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropButton">Socials
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdownContent">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twiter</a>
+                        <a href="#">Snapchat</a>
+                        <a href="#">Whatsapp</a>
+                        <a href="#">Signal</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+
+
+            </li>
             <li style="float:right;"><a href="#">Contact</a></li>
         </ul>
     </div>
