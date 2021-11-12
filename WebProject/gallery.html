@@ -1,81 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <title>Gallery</title>
-    <link type="text/css" rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <title>3 column website</title>
+    <style media="screen">
+        body{
+            background-color: #2C2F33;
+            margin: 0;
+            padding: 0;
+        }
+        #row{
+            width: 980px;
+            background: silver;
+            margin: 0 auto;
+        }
+        #header{
+            font-size: 56px;
+            background: blue;
+            text-align: center;
+        }
+        #left{
+            width: 33%;
+            height: 560px;
+            float: left;
+            background: green;
+        }
+        #center{
+            width: 33%;
+            height: 560px;
+            background: pink;
+            float: left;
+        }
+        #right{
+            width: 33%;
+            height: 560px;
+            background: purple;
+            float: left;
+        }
+        #footer{
+            clear: both;
+            font-size: 56px;
+            background: yellow;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <div id="header">
-            Gallery
-        </div>
-    </div>
-    <div class="row">
-        <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">About</a></li>
-            <li>
-                <div class="dropdown">
-                    <button class="dropButton">Socials
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdownContent">
-                        <a href="#">Facebook</a>
-                        <a href="#">Twiter</a>
-                        <a href="#">Snapchat</a>
-                        <a href="#">Whatsapp</a>
-                        <a href="#">Signal</a>
-                        <a href="#">LinkedIn</a>
-                    </div>
-                </div>
+<div id="row">
 
-
-            </li>
-            <li style="float:right;"><a href="#">Contact</a></li>
-        </ul>
-    </div>
-    <div class="row">
-        <div id="content">
-
-            <div class="gallery">
-                <a target="_blank" href="pics/antarctica.jpg1">
-                    <img src="pics/antarctica.jpg" alt="Cinque Terre" width="600" height="400">
-                </a>
-                <div class="desc">My first caption</div>
-            </div>
-
-            <div class="gallery">
-                <a target="_blank" href="pics/english.png">
-                    <img src="pics/english.png" alt="Forest" width="600" height="400">
-                </a>
-                <div class="desc">Another caption/description.</div>
-            </div>
-            <div class="gallery">
-                <a target="_blank" href="pics/antarctica.jpg1">
-                    <img src="pics/antarctica.jpg" alt="Cinque Terre" width="600" height="400">
-                </a>
-                <div class="desc">My first caption</div>
-            </div>
-
-            <div class="gallery">
-                <a target="_blank" href="pics/english.png">
-                    <img src="pics/english.png" alt="Forest" width="600" height="400">
-                </a>
-                <div class="desc">Another caption/description.</div>
-            </div>
-
-
-        </div>
-    </div>
-    <div class="row">
-        <div id="footer">
-            Copyright 2021 | Web Design | <a href="mailto:drew.fischer@vtsd.com">akiedes@vtsd.com</a>
-        </div>
-    </div>
-
+    <div id="header">Header</div>
+    <hr>
+    <div id="left">content</div>
+    <div id="center">middle</div>
+    <div id="right">sidebar</div>
+    <hr>
+    <div id="footer">footer</div>
 
 </div>
 </body>
